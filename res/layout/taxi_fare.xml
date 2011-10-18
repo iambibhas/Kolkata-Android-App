@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:weightSum="1" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:orientation="vertical">
+	<TextView android:textSize="45px" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:id="@+id/textView1" android:layout_width="fill_parent"
+		android:text="@string/btn_txt_taxi_fare" android:layout_gravity="top"
+		android:layout_weight="0.28" android:gravity="center_vertical|center_horizontal"
+		android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/radioGroup1"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<RadioButton android:text="@string/radio_txt_bykm"
+			android:layout_width="wrap_content" android:id="@+id/radioByKm"
+			android:layout_height="wrap_content" android:checked="true"
+			android:layout_weight="0.65"></RadioButton>
+		<RadioButton android:text="@string/radio_txt_bymeter"
+			android:id="@+id/radioByMeter" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></RadioButton>
+	</RadioGroup>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="83dp" android:id="@+id/editTextKmMeter"
+			android:inputType="numberDecimal" android:layout_weight="0.08"></EditText>
+		<Button android:onClick="calculateFare" android:id="@+id/btn_calculate"
+			android:layout_height="wrap_content" android:text="@string/btn_txt_calculate"
+			android:layout_width="107dp" android:layout_weight="0.05"></Button>
+	</LinearLayout>
+	<TextView android:textSize="35px" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="fill_parent" android:id="@+id/textViewResult"
+		android:text="@string/txt_empty" android:layout_weight="0.18"
+		android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal"></TextView>
+	<ScrollView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/linearLayout3"
+			android:layout_height="fill_parent" android:layout_width="wrap_content"
+			android:orientation="vertical"></LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

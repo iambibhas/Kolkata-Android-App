@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Explore!</string>
+    <string name="app_name">Kolkata</string>
+    <string name="btn_txt_taxi_fare">Calculate Taxi Fare</string>
+    <string name="radio_txt_bykm">from Km</string>
+    <string name="btn_txt_calculate">Calculate</string>
+    <string name="txt_empty"></string>
+    <string name="radio_txt_bymeter">from Meter Reading</string>
+    <string name="places_to_visit">Places To Visit</string>
+</resources>

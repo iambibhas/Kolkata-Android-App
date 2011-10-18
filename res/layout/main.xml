@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:weightSum="1">
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+			<TextView android:id="@+id/txvTaxi" android:layout_width="fill_parent"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:text="@string/btn_txt_taxi_fare" android:gravity="center_vertical"
+				android:layout_height="wrap_content" android:padding="30px"
+				android:onClick="viewTaxiFare" android:textSize="30px"
+				android:clickable="true" android:background="#333" android:layout_marginBottom="5px"></TextView>
+			<TextView android:id="@+id/txvPlaces" android:layout_width="fill_parent"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:text="@string/places_to_visit" android:gravity="center_vertical"
+				android:layout_height="wrap_content" android:padding="30px"
+				android:onClick="viewPlaces" android:textSize="30px"
+				android:clickable="true" android:background="#333"></TextView>
+		</LinearLayout>		
+	</ScrollView>
+</LinearLayout>
